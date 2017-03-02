@@ -1,0 +1,34 @@
+{
+  "name": "promise.defer",
+  "version": "4.0.1",
+  "description": "Lightweight Promise.defer implementation",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "(apm test) && (flow check) && (eslint . )",
+    "clean": "rm -rf lib",
+    "build": "npm run clean; babel src --out-dir lib",
+    "watch": "npm run clean; babel src --out-dir lib --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/steelbrain/node-ssh"
+  },
+  "keywords": [
+    "promise", "async", "defer"
+  ],
+  "author": "steelbrain <i@steelbrain.me>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/steelbrain/node-ssh/issues"
+  },
+  "dependencies": {
+
+  },
+  "devDependencies": {
+    "babel-cli": "^6.11.4",
+    "babel-preset-steelbrain": "^5.0.0",
+    "eslint-config-steelbrain": "^1.0.4",
+    "flow-bin": "^0.40.0",
+    "jasmine-fix": "^1.0.1"
+  }
+}
