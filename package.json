@@ -1,6 +1,6 @@
 {
   "name": "promise.defer",
-  "version": "4.0.1",
+  "version": "0.0.0",
   "description": "Lightweight Promise.defer implementation",
   "main": "lib/index.js",
   "scripts": {

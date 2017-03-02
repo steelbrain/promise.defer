@@ -3,7 +3,7 @@ node_modules
 spec/
 src/
 *.DS_Store
-decls/
+decls
 .flowconfig
 .eslintignore
 .eslintrc.json
