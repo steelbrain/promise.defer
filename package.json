@@ -1,6 +1,6 @@
 {
   "name": "promise.defer",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Lightweight Promise.defer implementation",
   "main": "lib/index.js",
   "scripts": {
@@ -14,16 +14,16 @@
     "url": "https://github.com/steelbrain/node-ssh"
   },
   "keywords": [
-    "promise", "async", "defer"
+    "promise",
+    "async",
+    "defer"
   ],
   "author": "steelbrain <i@steelbrain.me>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/steelbrain/node-ssh/issues"
   },
-  "dependencies": {
-
-  },
+  "dependencies": {},
   "devDependencies": {
     "babel-cli": "^6.11.4",
     "babel-preset-steelbrain": "^5.0.0",
