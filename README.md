@@ -1,5 +1,7 @@
 # Promise.defer
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/steelbrain/promise.defer.svg)](https://greenkeeper.io/)
+
 `promise.defer` is a lightweight NPM package that allows you to create promise synchronously
 
 ## Installation
