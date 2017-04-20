@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/steelbrain/node-ssh"
+    "url": "https://github.com/steelbrain/promise.defer"
   },
   "keywords": [
     "promise",
@@ -21,7 +21,7 @@
   "author": "steelbrain <i@steelbrain.me>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/steelbrain/node-ssh/issues"
+    "url": "https://github.com/steelbrain/promise.defer/issues"
   },
   "dependencies": {},
   "devDependencies": {
