@@ -1,6 +1,6 @@
 /* @flow */
 
-function promiseDefer<T>(): { promise: Promise<T>, resolve: Function, reject: Function } {
+function promiseDefer<T>(): { promise: Promise<T>, resolve: T => void, reject: any => void } {
   let reject
   let resolve
   const promise = new Promise(function(givenResolve, givenReject) {
