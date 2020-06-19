@@ -1,8 +1,6 @@
 # Promise.defer
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/steelbrain/promise.defer.svg)](https://greenkeeper.io/)
-
-`promise.defer` is a lightweight NPM package that allows you to create promise synchronously
+`promise.defer` is a lightweight NPM package that allows you to create promise synchronously.
 
 ## Installation
 
@@ -12,11 +10,11 @@ npm install --save promise.defer
 
 ## API
 
-```js
-type Deferred = {
-  reject: Function,
-  resolve: Function,
-  promise: Promise,
+```ts
+type Deferred<T> = {
+  reject(err: Error): void;
+  resolve(value: T): void;
+  promise: Promise<T>;
 }
 
 export default function promiseDefer(): Deferred;
@@ -25,12 +23,12 @@ export default function promiseDefer(): Deferred;
 ## Example Usage
 
 ```js
-import FS from 'fs'
+import fs from 'fs'
 import promiseDefer from 'promise.defer'
 
 export default function doSomething() {
   const deferred = promiseDefer()
-  FS.readFile('/etc/passwd', function(error, contents) {
+  fs.readFile('/etc/passwd', function(error, contents) {
     if (error) {
       deferred.reject(error)
     } else {
@@ -39,6 +37,12 @@ export default function doSomething() {
   })
   return deferred.promise
 }
+```
+
+CommonJS consumers may need to import it like:
+
+```js
+const {default: promiseDefer} = require('promise.defer')
 ```
 
 ## License
