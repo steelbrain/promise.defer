@@ -1,6 +1,6 @@
 {
   "name": "promise.defer",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "Lightweight Promise.defer implementation",
   "main": "lib/cjs/index.js",
   "typings": "lib/typings/index.d.ts",
